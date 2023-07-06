@@ -4,7 +4,7 @@ Ce projet est une démonstration de la gestion des fichiers en utilisant Spring 
 ## Entité Article
 L'entité utilisée dans ce projet est appelée "Article". Elle possède les attributs suivants :
 
-- `designation` : de type String, représente la désignation de l'article.
+- `designation` : de type `String`, représente la désignation de l'article.
 - `description` : de type `String`, représente la description de l'article.
 - `prixUnitaire` : de type `double`, représente le prix unitaire de l'article.
 - `image` : de type `String`, représente le nom du fichier image associé à l'article.
@@ -14,33 +14,33 @@ Ce projet expose les endpoints suivants pour la gestion des articles :
 
 Voici une description des endpoints disponibles dans le code fourni :
 
-1. **GET /articles**\
-   **Description** : Récupère la liste de tous les articles.\
-   **Méthode** : GET\
-   **Retour** : Liste d'objets Article.
+1. `GET /articles`\
+   Description : Récupère la liste de tous les articles.\
+   Méthode : `GET`\
+   Retour : Liste d'objets Article.
 
 
-2. **GET /article/{id}**\
-   **Description** : Récupère les informations d'un article spécifique en fonction de son ID.\
-   **Méthode** : GET\
-   **Paramètres** : `id` (chemin variable) - ID de l'article\
-   **Retour** : Objet Article.
+2. `GET /article/{id}`\
+   Description : Récupère les informations d'un article spécifique en fonction de son ID.\
+   Méthode : `GET`\
+   Paramètres : `id` (chemin variable) - ID de l'article\
+   Retour : Objet Article.
 
 
-3. **POST /ajout/article**\
-   **Description** : Ajoute un nouvel article avec les informations fournies et télécharge une image associée.\
-   **Méthode** : POST\
-   **Paramètres** :
+3. `POST /ajout/article`\
+   Description : Ajoute un nouvel article avec les informations fournies et télécharge une image associée.\
+   Méthode : `POST`\
+   Paramètres :
     - `image` (multipart) - Fichier image à télécharger.
     - `article` (corps de la requête) - JSON représentant l'objet Article.\
     **Retour** : Objet Article nouvellement ajouté.
 
 
-4. **GET /image/article/{id}**\
-   **Description** : Récupère l'image associée à un article spécifique en fonction de son ID.\
-   **Méthode** : GET\
-   **Paramètres** : `id` (chemin variable) - ID de l'article\
-   **Retour** : Fichier image.
+4. `GET /image/article/{id}`\
+   Description : Récupère l'image associée à un article spécifique en fonction de son ID.\
+   Méthode : `GET`\
+   Paramètres : `id` (chemin variable) - ID de l'article\
+   Retour : Fichier image.
 
 Ces endpoints permettent de gérer la récupération des articles, l'ajout d'un nouvel article avec une image associée, ainsi que la récupération de l'image d'un article spécifique.
 
@@ -62,10 +62,10 @@ Suivez les étapes ci-dessous :
 - Exécutez la commande **mvn spring-boot:run** pour lancer l'application.
 - L'application sera accessible à l'URL **http://localhost:2020**.
 - Lancez ensuite votre **postman** pour tester nos **endpoints**.
-   1. **POST /ajout/article**
-  2. **GET /articles**
-  3. **GET /article/{id}**
-  4. **GET /image/article/{id}**
+   1. `POST /ajout/article`
+  2. `GET /articles`
+  3. `GET /article/{id}`
+  4. `GET /image/article/{id}`
 
 Assurez-vous d'apporter les modifications nécessaires à la configuration de la base de données, si nécessaire, dans le fichier application.properties.
 
