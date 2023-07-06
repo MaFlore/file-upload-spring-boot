@@ -47,21 +47,21 @@ Ces endpoints permettent de gérer la récupération des articles, l'ajout d'un 
 ## Comment exécuter le projet ?
 Pour exécuter ce projet, assurez-vous d'avoir installé les éléments suivants :
 
-- **Postman**
-- **Editeur de code**
-- **Java Development Kit (JDK)**
-- **Maven**
-- Un SGBD (**MySQL**)
+- Postman
+- Editeur de code
+- Java Development Kit (JDK)
+- Maven
+- Un SGBD (MySQL)
 
 Suivez les étapes ci-dessous :
 
 - Clonez ce projet sur votre machine.
-- Crée la base de données **file_upload**
-- Ou soit vous pouvez rentrer dans le fichier **application.properties** qui se trouve dans le repertoire **resources** du projet cloné pour configurer l'accès à votre base de données.
+- Crée la base de données `file_upload`
+- Ou soit vous pouvez rentrer dans le fichier `application.properties` qui se trouve dans le repertoire `ressources` du projet cloné pour configurer l'accès à votre base de données.
 - Naviguez vers le répertoire du projet à l'aide d'un terminal.
-- Exécutez la commande **mvn spring-boot:run** pour lancer l'application.
-- L'application sera accessible à l'URL **http://localhost:2020**.
-- Lancez ensuite votre **postman** pour tester nos **endpoints**.
+- Exécutez la commande `mvn spring-boot:run` pour lancer l'application.
+- L'application sera accessible à l'URL `http://localhost:2020`.
+- Lancez ensuite votre `postman` pour tester nos `endpoints`.
    1. `POST /ajout/article`
   2. `GET /articles`
   3. `GET /article/{id}`
