@@ -25,6 +25,9 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public Article add(Article article) {
+        article.setDesignation(article.getDesignation());
+        article.setDescription(article.getDescription());
+        article.setPrixUnitaire(article.getPrixUnitaire());
         return articleRepository.save(article);
     }
 
