@@ -63,9 +63,17 @@ Suivez les étapes ci-dessous :
 - L'application sera accessible à l'URL `http://localhost:2020`.
 - Lancez ensuite votre `postman` pour tester nos `endpoints`.
   1. `POST /ajout/article`
+     ![1](https://github.com/MaFlore/file-upload-spring-boot/assets/101883211/2247ab24-5090-4659-bb2e-96932ad9614d)
+     
   2. `GET /articles`
+     ![2](https://github.com/MaFlore/file-upload-spring-boot/assets/101883211/6bb553de-00fd-4177-952a-e2cf13c8aa3a)
+
   3. `GET /article/{id}`
+    ![4](https://github.com/MaFlore/file-upload-spring-boot/assets/101883211/3ecc7442-f476-4782-9202-2f6db3a8ddf0)
+
+
   4. `GET /image/article/{id}`
+      ![3](https://github.com/MaFlore/file-upload-spring-boot/assets/101883211/c7563925-6183-4d40-8f86-ea993da5bbf4)
 
 Assurez-vous d'apporter les modifications nécessaires à la configuration de la base de données, si nécessaire, dans le fichier application.properties.
 
