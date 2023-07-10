@@ -62,7 +62,7 @@ Suivez les étapes ci-dessous :
 - Exécutez la commande `mvn spring-boot:run` pour lancer l'application.
 - L'application sera accessible à l'URL `http://localhost:2020`.
 - Lancez ensuite votre `postman` pour tester nos `endpoints`.
-   1. `POST /ajout/article`
+  1. `POST /ajout/article`
   2. `GET /articles`
   3. `GET /article/{id}`
   4. `GET /image/article/{id}`
